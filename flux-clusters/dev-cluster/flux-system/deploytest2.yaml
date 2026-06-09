@@ -6,7 +6,7 @@ metadata:
   name: deploytest2
   namespace: maryplaya
 spec:
-  replicas: 10
+  replicas: 15
   selector:
     matchLabels:
       app: deploytest2
