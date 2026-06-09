@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: deploytest2
+  name: deploytest2
+  namespace: maryplaya
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: deploytest2
+  template:
+    metadata:
+      labels:
+        app: deploytest2
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
